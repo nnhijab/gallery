@@ -1,10 +1,10 @@
 img {
     display: inline-block;
-    width: 70%; // Show 4 images in a row normally
+    width: 100%; // Show 4 images in a row normally
     height: auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   img {
     width: 100%; // Override width to show only one image in a row on smaller screens
   }
@@ -12,7 +12,7 @@ img {
 
 .frame {
 height: auto; /*if more info comes on the page, it will stretch down*/
-width: 1000px;
+width: 100%;
 margin: 0 auto; /*this will cause the div to be in the center*/
 }
 #tab_menu {
@@ -30,8 +30,8 @@ margin: 0 auto; /*this will cause the div to be in the center*/
 
 #tab_menu li {
     float:left;
-    border-right:1px solid #FFA722;
-    border-left:1px solid #CC5200;
+    border-right:1px solid #000000;
+    border-left:1px solid #000000;
 }
 
 #tab_menu li:first-child {
