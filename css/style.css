@@ -15,48 +15,59 @@ height: auto; /*if more info comes on the page, it will stretch down*/
 width: 100%;
 margin: 0 auto; /*this will cause the div to be in the center*/
 }
-#tab_menu {
-    background:url(img/menu_bg.png) no-repeat;
-    height:50px;
-    width:960px;
-    line-height:50px;
-    list-style:none;
-    margin-top:10px;
-    font-size:14px;
-    font-family:Verdana, Geneva, sans-serif;
-    font-weight:bold;
-    overflow:hidden;
+
+.menu-wrap {
+ background-color:#53bd84; 
+ height:50px; 
+ line-height:50px; 
+ position:relative;
+ width:770px;
+ margin:auto;
+ margin-top:80px;
 }
 
-#tab_menu li {
-    float:left;
-    border-right:1px solid #000000;
-    border-left:1px solid #000000;
+.menu-wrap ul {
+ list-style:none;
 }
 
-#tab_menu li:first-child {
-    border-left:none;
+.menu-wrap ul li a {
+ float:left; 
+ width:150px; 
+ display:block; 
+ text-align:center; 
+ color:#FFF; 
+ text-decoration:none; 
+ text-transform:uppercase;
 }
 
-#tab_menu li:last-child {
-    border-right:none;
+.menu-wrap ul li a:hover {
+ background-color:#666; 
+ display:block;
 }
 
-#tab_menu li a{
-    text-decoration:none;
-    float:left;
-    display:block;
-    height:50px;
-    padding:0 20px;
-    color:#FFF;
+.menu-wrap ul li:hover ul {
+ display:block;
 }
 
-#tab_menu li a.current, #tab_menu li a:hover, #tab_menu li a.tool:hover {
-    color:#622900;
-    text-shadow:1px 1px 0px #E8964B;
+.menu-wrap ul ul {
+ display:none; 
+ list-style:none; 
+ position:absolute; 
+ background-color:#53bd84;
+ left:300px; 
+ top:50px; 
+ width:190px;
 }
 
-#tab_menu li a.tool{
-    color:#000;
-    text-shadow:1px 1px 0px #E8964B;
+.menu-wrap ul ul li a {
+ float:none; 
+ display:block; 
+ padding-left:30px; 
+ text-align:left; 
+ width:160px;
+}
+
+.menu-wrap ul ul li a:hover {
+ color:#fff;
+
 }
