@@ -14,18 +14,30 @@
 <center>
 
 <img src='img/banner.jpg'>
-<div class="menu-wrap">
-<ul>
-<li ><a href="bella.html"  target="iframe_a">Bella Square</a></li>
-<li ><a href="bella.html"  target="iframe_a">Azzura Scarf</a></li>
-<li ><a href="bella.html"  target="iframe_a">Umama Scarf</a></li>
-<li ><a href="bella.html"  target="iframe_a">Dafanya</a></li>
-<li ><a href="bella.html"  target="iframe_a">Yeffa</a></li>
-<li ><a href="bella.html"  target="iframe_a">Lainnya</a></li>
-</ul>
+<div class="topnav" id="myTopnav">
+<a href="bella.html"  target="iframe_a">Bella Square</a>
+<a href="bella.html"  target="iframe_a">Azzura Scarf</a>
+<a href="bella.html"  target="iframe_a">Umama Scarf</a>
+<a href="bella.html"  target="iframe_a">Dafanya</a>
+<a href="bella.html"  target="iframe_a">Yeffa</a>
+<a href="bella.html"  target="iframe_a">Lainnya</a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
 <div class="frame"><iframe height="800px" width="100%" src="bella.html" name="iframe_a"></iframe></div>
 
 <center>
+    
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 </html>
